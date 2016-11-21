@@ -32,7 +32,7 @@ ws.on('message', function(data, flags) {
 });
 ```
 
-save this to a file and run node <file_name>.js and you should see below,
+save this to a file and run ```node file_name.js``` and you should see below,
 ```
 Hello ---  0   ---- websocket session id
 Hello ---  0
