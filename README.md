@@ -14,6 +14,8 @@ now import it to intellij as maven project and then run App.java class
 ### Starting scheduler
 curl -X PUT  http://localhost:8080/api/poller/start/1     --- 1 seconds -- so it will spawn a async task everysecond
 
+curl -X GET  http://localhost:8080/api/poller/stop        --- to stop the scheduler
+
 curl -X GET  http://localhost:8080/api/poller/listeners   --- gives you id of all the websockets sessions
 
 curl -X DELETE  http://localhost:8080/api/poller/listeners/1  --- temrinates web socket session with id 1
