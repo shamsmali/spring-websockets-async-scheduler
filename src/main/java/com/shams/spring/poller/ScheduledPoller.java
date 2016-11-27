@@ -45,7 +45,7 @@ public class ScheduledPoller implements Poller {
     public boolean stop() {
         lock.lock();
         if (!this.executorService.isShutdown()) {
-            System.out.println("Going to shutdown the service now ... waiting for 5 seconds");
+            System.out.println("Going to shutdown the service now");
             this.executorService.shutdown();
             this.executorService = Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors());
         }
